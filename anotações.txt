@@ -1,0 +1,22 @@
+Boas práticas:
+tags : caso necessario mais de uma classificaçãod ar espaço duplo e escrver 
+serve para manipular as execuções dos testes
+nos eprmite categorizar os testes individualmente e executa-los separados por tags
+
+documentation: caso encessite de mais uma linha colcoar ... e continaur a escrever
+Devemos documentar o caso de teste 
+para frases dar espaços simple ss enão o robot entende que é algo diferente de uma frase 
+exemplo espaços duplos
+
+setup : é algo que se programa para o robot fazer antes de rodar o teste ou amtes de rodar uma swit
+swit de teste: para o robot é o arquivo de casos de testes
+
+então eu consigo fazer alguma ação antes da swit rodar oua ntes de cada teste rodar
+
+teardow:e o mesmo que o setup porem ele é executado no final ou seja ele execvuta alguam coisa no finalda swit
+ou ao final de cada teste
+
+na seção setings consigo configurar o meu teste no caso a swit de teste
+
+CMD: Execução via terminal - Basta digitar: robot nome_do_arquivo
+
