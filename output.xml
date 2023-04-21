@@ -1,40 +1,42 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 6.0.2 (Python 3.11.3 on win32)" generated="20230421 15:29:42.080" rpa="false" schemaversion="3">
+<robot generator="Robot 6.0.2 (Python 3.11.3 on win32)" generated="20230421 16:20:04.226" rpa="false" schemaversion="3">
 <suite id="s1" name="Amazon Testes" source="C:\Users\Vinicius\Documents\curso_udemy\RobotFramework\Web Testing\amazon_testes.robot">
 <test id="s1-t1" name="Caso de teste 01 - Acesso ao menu &quot;Eletrônicos&quot;" line="12">
 <kw name="Abrir o navegador" library="amazon_resources" type="SETUP">
 <kw name="Open Browser" library="SeleniumLibrary">
 <arg>browser=gc</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<msg timestamp="20230421 15:29:42.447" level="INFO">Opening browser 'gc' to base url 'None'.</msg>
-<status status="PASS" starttime="20230421 15:29:42.447" endtime="20230421 15:29:44.167"/>
+<msg timestamp="20230421 16:20:04.865" level="INFO">Opening browser 'gc' to base url 'None'.</msg>
+<status status="PASS" starttime="20230421 16:20:04.865" endtime="20230421 16:20:06.816"/>
 </kw>
-<status status="PASS" starttime="20230421 15:29:42.447" endtime="20230421 15:29:44.167"/>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20230421 16:20:06.816" endtime="20230421 16:20:06.945"/>
+</kw>
+<status status="PASS" starttime="20230421 16:20:04.865" endtime="20230421 16:20:06.945"/>
 </kw>
 <kw name="Acessar a home page do site Amazon.com.br" library="amazon_resources">
 <kw name="Go To" library="SeleniumLibrary">
 <arg>${URL}</arg>
 <doc>Navigates the current browser window to the provided ``url``.</doc>
-<msg timestamp="20230421 15:29:44.168" level="INFO">Opening url 'https://www.amazon.com.br'</msg>
-<status status="PASS" starttime="20230421 15:29:44.168" endtime="20230421 15:29:56.658"/>
+<msg timestamp="20230421 16:20:06.947" level="INFO">Opening url 'https://www.amazon.com.br'</msg>
+<status status="PASS" starttime="20230421 16:20:06.947" endtime="20230421 16:20:15.246"/>
 </kw>
-<status status="PASS" starttime="20230421 15:29:44.167" endtime="20230421 15:29:56.658"/>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>locator=${MENU_ELETRONICOS}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20230421 16:20:15.246" endtime="20230421 16:20:16.565"/>
 </kw>
-<kw name="Fechar o navegador" library="amazon_resources" type="TEARDOWN">
-<kw name="Close Browser" library="SeleniumLibrary">
-<doc>Closes the current browser.</doc>
-<status status="PASS" starttime="20230421 15:29:56.659" endtime="20230421 15:29:58.929"/>
-</kw>
-<status status="PASS" starttime="20230421 15:29:56.658" endtime="20230421 15:29:58.929"/>
+<status status="PASS" starttime="20230421 16:20:06.946" endtime="20230421 16:20:16.566"/>
 </kw>
 <doc>Esse teste verifica o menu eletrônicos do site da Amazon.com.br
 e verifica a categoria Computadores e Informática</doc>
 <tag>categorias</tag>
 <tag>menus</tag>
-<status status="PASS" starttime="20230421 15:29:42.446" endtime="20230421 15:29:58.930"/>
+<status status="PASS" starttime="20230421 16:20:04.864" endtime="20230421 16:20:16.567"/>
 </test>
 <doc>Essa suite testa o site da Amazon.com.br</doc>
-<status status="PASS" starttime="20230421 15:29:42.082" endtime="20230421 15:29:58.939"/>
+<status status="PASS" starttime="20230421 16:20:04.228" endtime="20230421 16:20:16.569"/>
 </suite>
 <statistics>
 <total>
