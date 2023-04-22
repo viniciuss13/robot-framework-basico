@@ -1,50 +1,59 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 6.0.2 (Python 3.11.3 on win32)" generated="20230421 16:20:04.226" rpa="false" schemaversion="3">
+<robot generator="Robot 6.0.2 (Python 3.11.3 on win32)" generated="20230421 18:36:35.153" rpa="false" schemaversion="3">
 <suite id="s1" name="Amazon Testes" source="C:\Users\Vinicius\Documents\curso_udemy\RobotFramework\Web Testing\amazon_testes.robot">
-<test id="s1-t1" name="Caso de teste 01 - Acesso ao menu &quot;Eletrônicos&quot;" line="12">
+<test id="s1-t1" name="Caso de Teste 02 - Pesquisa de um Produto" line="24">
 <kw name="Abrir o navegador" library="amazon_resources" type="SETUP">
 <kw name="Open Browser" library="SeleniumLibrary">
 <arg>browser=gc</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<msg timestamp="20230421 16:20:04.865" level="INFO">Opening browser 'gc' to base url 'None'.</msg>
-<status status="PASS" starttime="20230421 16:20:04.865" endtime="20230421 16:20:06.816"/>
+<msg timestamp="20230421 18:36:35.385" level="INFO">Opening browser 'gc' to base url 'None'.</msg>
+<status status="PASS" starttime="20230421 18:36:35.385" endtime="20230421 18:36:37.232"/>
 </kw>
 <kw name="Maximize Browser Window" library="SeleniumLibrary">
 <doc>Maximizes current browser window.</doc>
-<status status="PASS" starttime="20230421 16:20:06.816" endtime="20230421 16:20:06.945"/>
+<status status="PASS" starttime="20230421 18:36:37.233" endtime="20230421 18:36:37.386"/>
 </kw>
-<status status="PASS" starttime="20230421 16:20:04.865" endtime="20230421 16:20:06.945"/>
+<status status="PASS" starttime="20230421 18:36:35.384" endtime="20230421 18:36:37.387"/>
 </kw>
 <kw name="Acessar a home page do site Amazon.com.br" library="amazon_resources">
 <kw name="Go To" library="SeleniumLibrary">
 <arg>${URL}</arg>
 <doc>Navigates the current browser window to the provided ``url``.</doc>
-<msg timestamp="20230421 16:20:06.947" level="INFO">Opening url 'https://www.amazon.com.br'</msg>
-<status status="PASS" starttime="20230421 16:20:06.947" endtime="20230421 16:20:15.246"/>
+<msg timestamp="20230421 18:36:37.392" level="INFO">Opening url 'https://www.amazon.com.br'</msg>
+<status status="PASS" starttime="20230421 18:36:37.390" endtime="20230421 18:36:42.461"/>
 </kw>
 <kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
 <arg>locator=${MENU_ELETRONICOS}</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" starttime="20230421 16:20:15.246" endtime="20230421 16:20:16.565"/>
+<status status="PASS" starttime="20230421 18:36:42.461" endtime="20230421 18:36:42.493"/>
 </kw>
-<status status="PASS" starttime="20230421 16:20:06.946" endtime="20230421 16:20:16.566"/>
+<status status="PASS" starttime="20230421 18:36:37.389" endtime="20230421 18:36:42.493"/>
 </kw>
-<doc>Esse teste verifica o menu eletrônicos do site da Amazon.com.br
-e verifica a categoria Computadores e Informática</doc>
-<tag>categorias</tag>
-<tag>menus</tag>
-<status status="PASS" starttime="20230421 16:20:04.864" endtime="20230421 16:20:16.567"/>
+<kw name="Digitar o nome de produto &quot;Xbox Series S&quot; no campo de pesquisa" library="amazon_resources" sourcename="Digitar o nome de produto &quot;${PRODUTO}&quot; no campo de pesquisa">
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>locator=${CAMPO_PESQUISA}</arg>
+<arg>text=${PRODUTO}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20230421 18:36:42.494" level="INFO">Typing text 'Xbox Series S' into text field '//input[contains(@type,'text')]'.</msg>
+<status status="PASS" starttime="20230421 18:36:42.493" endtime="20230421 18:36:42.712"/>
+</kw>
+<status status="PASS" starttime="20230421 18:36:42.493" endtime="20230421 18:36:42.713"/>
+</kw>
+<doc>Esse teste verifica a busca de um produto</doc>
+<tag>busca_produtos</tag>
+<tag>lista_dabusca</tag>
+<status status="PASS" starttime="20230421 18:36:35.384" endtime="20230421 18:36:42.713"/>
 </test>
 <doc>Essa suite testa o site da Amazon.com.br</doc>
-<status status="PASS" starttime="20230421 16:20:04.228" endtime="20230421 16:20:16.569"/>
+<status status="PASS" starttime="20230421 18:36:35.155" endtime="20230421 18:36:42.715"/>
 </suite>
 <statistics>
 <total>
 <stat pass="1" fail="0" skip="0">All Tests</stat>
 </total>
 <tag>
-<stat pass="1" fail="0" skip="0">categorias</stat>
-<stat pass="1" fail="0" skip="0">menus</stat>
+<stat pass="1" fail="0" skip="0">busca_produtos</stat>
+<stat pass="1" fail="0" skip="0">lista_dabusca</stat>
 </tag>
 <suite>
 <stat pass="1" fail="0" skip="0" id="s1" name="Amazon Testes">Amazon Testes</stat>
