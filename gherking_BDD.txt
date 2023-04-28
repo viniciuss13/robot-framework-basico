@@ -1,0 +1,11 @@
+Escrever testes no formato gherkin usando a emtodologia BDD
+
+O robot não é uam linguagemnd e programação e ele nção repcisa de plugin para rodar bdd
+por cauisa da estrutura dele de nativa keyworddriven ele não precisa de plugin então é possivel escrever diretamente os testes no formato gherking
+
+Dado, Quando, Então. Sem repcisar de plugin e nem fazer configurações adicionais
+
+CRIAR UMA KEYWORD QUE AGRUPA OUTRA É TAMBÉM BOA PRATICA 
+
+Dado que estou na home page da Amazon.com.br
+    Acessar a home page do site Amazon.com.br

@@ -44,3 +44,9 @@ Clicar no botão de pesquisa
 
 Verificar o resultado da pesquisa, se está listando o produto "${PRODUTO}"
     Wait Until Element Is Visible    locator=(//span[contains(.,'${PRODUTO}')])[2]                
+
+
+#GHERKIN STEPS
+
+Dado que estou na home page da Amazon.com.br
+    Acessar a home page do site Amazon.com.br

@@ -20,3 +20,27 @@ na seção setings consigo configurar o meu teste no caso a swit de teste
 
 CMD: Execução via terminal - Basta digitar: robot nome_do_arquivo
 
+comandos apra executar somente um dos testes:
+robot -t "nome do teste" caminho do arquivo
+
+semrpe usar keywords de verificação como:
+wait e should Be
+
+comandos terminal robot:
+
+-i serve para dizer qual tag quero executar:
+    robot -i <noem da tag> <nome da arquivo de teste> - o robot ira procurar dentro da swit de teste e vai executar todos os teste da swit que contenham a tag
+
+-e = exclue diz para não executar um teste especifico executa todos os testes da suit menos o que tiver a tag indicatd
+    robot -e <nome da tag> <caminho do arq de teste>
+
+-d serve para organizar os arquivos de output log passando o atributo e o nome de uma pasta ele executa toda swit de teste
+    robot -d <nome da pasta que desejo criar para organizar os arquivos ou a ja existente > <nome do teste arquivo de testes>
+
+
+as vezes rpecisamos mudar valores executar varios testes as vezes os mesmos com valores diferentes para isso basta
+    ex: ${BREOSER}  Chrome se necessario mduar de chrome para fire fox basta
+        robot -v <nome da variavel:nome do novo valor>
+
+tambem é possivel combinar os parametros
+    robot -v <nome da variavel:nome do novo valor> -i <nome da tag> -d <nome da pasta para o output> <nome do arquivo de teste>
