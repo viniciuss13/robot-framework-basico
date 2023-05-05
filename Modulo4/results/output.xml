@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 6.0.2 (Python 3.11.3 on win32)" generated="20230504 02:31:49.396" rpa="false" schemaversion="3">
+<suite id="s1" name="ExemplosArgumentos" source="C:\Users\vinic\OneDrive\Documentos\robot-framework-basico\Modulo4\VariaveisEscoposArgumentos\ExemplosArgumentos.robot">
+<test id="s1-t1" name="Caso de teste de exemplo 01" line="8">
+<kw name="Uma keyword qualquer 01">
+<kw name="Uma subkeyword com argumentos">
+<arg>Bruno Silva</arg>
+<arg>bruno_silva@teste.com.br</arg>
+<kw name="Log" library="BuiltIn">
+<arg>Nome Usuário: ${NOME_USUARIO}</arg>
+<doc>Logs the given message with the given level.</doc>
+<msg timestamp="20230504 02:31:49.422" level="INFO">Nome Usuário: Bruno Silva</msg>
+<status status="PASS" starttime="20230504 02:31:49.422" endtime="20230504 02:31:49.422"/>
+</kw>
+<kw name="Log" library="BuiltIn">
+<arg>Email: ${EMAIL_USUARIO}</arg>
+<doc>Logs the given message with the given level.</doc>
+<msg timestamp="20230504 02:31:49.422" level="INFO">Email: bruno_silva@teste.com.br</msg>
+<status status="PASS" starttime="20230504 02:31:49.422" endtime="20230504 02:31:49.423"/>
+</kw>
+<status status="PASS" starttime="20230504 02:31:49.421" endtime="20230504 02:31:49.423"/>
+</kw>
+<kw name="Uma subkeyword com argumentos">
+<arg>${PESSOA.nome}</arg>
+<arg>${PESSOA.email}</arg>
+<kw name="Log" library="BuiltIn">
+<arg>Nome Usuário: ${NOME_USUARIO}</arg>
+<doc>Logs the given message with the given level.</doc>
+<msg timestamp="20230504 02:31:49.424" level="INFO">Nome Usuário: May Fernandes</msg>
+<status status="PASS" starttime="20230504 02:31:49.424" endtime="20230504 02:31:49.424"/>
+</kw>
+<kw name="Log" library="BuiltIn">
+<arg>Email: ${EMAIL_USUARIO}</arg>
+<doc>Logs the given message with the given level.</doc>
+<msg timestamp="20230504 02:31:49.424" level="INFO">Email: mayfernandes@exemplo.com.br</msg>
+<status status="PASS" starttime="20230504 02:31:49.424" endtime="20230504 02:31:49.424"/>
+</kw>
+<status status="PASS" starttime="20230504 02:31:49.423" endtime="20230504 02:31:49.424"/>
+</kw>
+<kw name="Uma subkeyword com retorno">
+<var>${MENSAGEM_ALERTA}</var>
+<arg>${PESSOA.nome}</arg>
+<arg>${PESSOA.idade}</arg>
+<kw name="Set Variable If" library="BuiltIn">
+<var>${MENSAGEM}</var>
+<arg>${IDADE_USUARIO}&lt;18</arg>
+<arg>Não autorizado! O usuário ${NOME_USUARIO} é menor de idade!</arg>
+<arg>OK!Usuário é maior de idade!</arg>
+<doc>Sets variable based on the given condition.</doc>
+<msg timestamp="20230504 02:31:49.425" level="INFO">${MENSAGEM} = OK!Usuário é maior de idade!</msg>
+<status status="PASS" starttime="20230504 02:31:49.425" endtime="20230504 02:31:49.425"/>
+</kw>
+<msg timestamp="20230504 02:31:49.425" level="INFO">${MENSAGEM_ALERTA} = OK!Usuário é maior de idade!</msg>
+<status status="PASS" starttime="20230504 02:31:49.424" endtime="20230504 02:31:49.425"/>
+</kw>
+<kw name="Log" library="BuiltIn">
+<arg>${MENSAGEM_ALERTA}</arg>
+<doc>Logs the given message with the given level.</doc>
+<msg timestamp="20230504 02:31:49.426" level="INFO">OK!Usuário é maior de idade!</msg>
+<status status="PASS" starttime="20230504 02:31:49.425" endtime="20230504 02:31:49.426"/>
+</kw>
+<status status="PASS" starttime="20230504 02:31:49.421" endtime="20230504 02:31:49.426"/>
+</kw>
+<status status="PASS" starttime="20230504 02:31:49.420" endtime="20230504 02:31:49.426"/>
+</test>
+<doc>Exemplo de uso de variáveis como argumentos em Keywords</doc>
+<status status="PASS" starttime="20230504 02:31:49.397" endtime="20230504 02:31:49.429"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="ExemplosArgumentos">ExemplosArgumentos</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

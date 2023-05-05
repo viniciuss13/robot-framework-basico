@@ -1,0 +1,26 @@
+Modulo 4 Variaveis
+
+Obs!!
+Cada arquivo .robot é um suit de testes
+
+para determinar as variaveis de teste devemos saber o escopo dela e dizer após a palavra "set"
+
+
+TIPOS DE VARIAVEIS
+
+existem 3 tipos de variaveis = Simples, Lista e dicionarios
+
+- Simples = Variaveis com valort único - representada por "$"
+- Lista = Guardar varios valores e é separada por espaços duplos representado por "@"
+- Dicionario = Estrutura onde se tem chave e valor representado por "&"
+
+
+
+o robot nso permite criar as nossas proprias keywords:
+
+Quando criamos uma keyword coma rgumentos devemos fazer o seguinte:
+
+[Arguments]     seguido das variaveis
+
+Criando keyword com retorno:
+[Return]    seguido da variavel

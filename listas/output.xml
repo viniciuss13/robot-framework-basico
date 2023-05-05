@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 6.0.2 (Python 3.11.3 on win32)" generated="20230503 18:31:25.844" rpa="false" schemaversion="3">
+<suite id="s1" name="Resolução Correta" source="C:\Users\vinic\OneDrive\Documentos\robot-framework-basico\listas\resolução_correta.robot">
+<test id="s1-t1" name="Imprimir os meses do ano" line="16">
+<kw name="Log To Console" library="BuiltIn">
+<arg>Mês 01: ${MESES[0]}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20230503 18:31:25.874" endtime="20230503 18:31:25.875"/>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<arg>Mês 02: ${MESES[1]}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20230503 18:31:25.875" endtime="20230503 18:31:25.876"/>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<arg>Mês 03: ${MESES[2]}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20230503 18:31:25.877" endtime="20230503 18:31:25.878"/>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<arg>Mês 04: ${MESES[3]}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20230503 18:31:25.878" endtime="20230503 18:31:25.879"/>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<arg>Mês 05: ${MESES[4]}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20230503 18:31:25.880" endtime="20230503 18:31:25.881"/>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<arg>Mês 06: ${MESES[5]}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20230503 18:31:25.881" endtime="20230503 18:31:25.882"/>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<arg>Mês 07: ${MESES[6]}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20230503 18:31:25.883" endtime="20230503 18:31:25.883"/>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<arg>Mês 08: ${MESES[7]}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20230503 18:31:25.884" endtime="20230503 18:31:25.885"/>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<arg>Mês 09: ${MESES[8]}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20230503 18:31:25.885" endtime="20230503 18:31:25.886"/>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<arg>Mês 10: ${MESES[9]}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20230503 18:31:25.886" endtime="20230503 18:31:25.887"/>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<arg>Mês 11: ${MESES[10]}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20230503 18:31:25.887" endtime="20230503 18:31:25.888"/>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<arg>Mês 12: ${MESES[11]}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20230503 18:31:25.888" endtime="20230503 18:31:25.889"/>
+</kw>
+<status status="PASS" starttime="20230503 18:31:25.873" endtime="20230503 18:31:25.889"/>
+</test>
+<status status="PASS" starttime="20230503 18:31:25.846" endtime="20230503 18:31:25.890"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="Resolução Correta">Resolução Correta</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
